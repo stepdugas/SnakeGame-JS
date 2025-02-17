@@ -1,9 +1,9 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-const tileSize = 15;
-const rows = 15;
-const cols = 15;
+const tileSize = 9;
+const rows = 9;
+const cols = 9;
 canvas.width = cols * tileSize;
 canvas.height = rows * tileSize;
 
@@ -87,7 +87,7 @@ function gameLoop() {
     update();
     draw();
     if (!gameOver) {
-        setTimeout(gameLoop, 100);
+        setTimeout(gameLoop, 150);
     }
 }
 
