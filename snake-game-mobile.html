@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="glow-text">📱 Snake Game (Mobile)</h1>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="mobile-controls">
+        <button onclick="changeDirection('UP')">⬆️</button>
+        <div>
+            <button onclick="changeDirection('LEFT')">⬅️</button>
+            <button onclick="startGame()">▶️ Start</button>
+            <button onclick="changeDirection('RIGHT')">➡️</button>
+        </div>
+        <button onclick="changeDirection('DOWN')">⬇️</button>
+    </div>
+
+    <script src="snake-mobile.js"></script>
+
+</body>
+</html>
